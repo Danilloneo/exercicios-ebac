@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+
+body > header {
+    background-color: #2f3640;
+    color: #f5f6fa;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header li {
+    margin-left: 20px;
+    display: inline;
+/*Colocar o cabeça-lho com os botoões em li um do lado do outro*/
+}
+
+header li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #f5f6fa;
+}
+
+header li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+float: inline-start;
+position: absolute;
+margin-left: 560px;
+}
+
+/*Fim do Header*/
+
+/*Div Geral (Containers, Artigos, links no artigo, paragrafos, h2, h3)*/
+
+.container {
+    width: 1366px;
+    margin: 0 auto;  
+    /*Pega a div container que repete em todas as sectiosn
+    define uma largura para bons monitores, e centraliza na margem*/
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*Pega a div .article dentro da div container e coloca o display
+    flex um do lado do outro, flex-wrap: wrap para quebrar linha com conteudo,
+    justify content space between espaço entre as divs articles*/
+}
+
+.article article img {
+    width: 100%;
+    /*Aqui a div .article pega o artigo dentro dela e a imagem dentro
+    do artigo, e define a 180 px cada uma, como esses nomes
+    se repetem em todas as sections, ele alinha o layout de toda a pagina*/
+}
+
+.article article {
+    width: 25.5%;
+    /*Por ultimo ele pega o article  dentro da div article e define 25.5% de
+    largura só*/
+}
+
+
+.article article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.article article a {
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color:#f5f6fa;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none; /*Remover underline link*/
+    font-weight: bold;
+}
+
+section h2, article article {
+    margin-bottom: 16px;
+}
+
+
+.article article p, .article article a
+{
+    font-family: sans-serif;
+}
+
+.article article a:hover {
+    text-decoration: underline;
+}
+
+.article article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    padding-top: 20px;
+    font-size: 32px;
+}
+
+
+/*Fim Div Geral*/
+
+/*Sections Entretenimento*/
+
+#entretenimento {
+    margin-top: 0;
+    background-color:rgba(114, 76, 40, 0.788);
+}
+
+#entretenimento .article .date-notice a {
+    background-color: none;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight:normal;
+}
+
+#entretenimento .article .ler-mais-entretenimento {
+    font-size: initial;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    background-color: #392620;
+    color:#f5f6fa;
+    display: inline-block;
+    text-decoration: none; /*Remover underline link*/
+}
+
+
+
+/*Fim Entretenimento*/
+
+/*Sections Tecnologia*/
+
+#tecnologia {
+    margin-top: 0;
+    background-color:rgba(40, 72, 114, 0.788);
+}
+
+
+#tecnologia .article .date-notice a {
+    background-color: none;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight:normal;
+}
+
+#tecnologia .article .ler-mais-entretenimento {
+    font-size: initial;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    background-color: rgb(58, 14, 231);
+    color:#f5f6fa;
+    display: inline-block;
+    text-decoration: none; /*Remover underline link*/
+}
+/*Fim Tecnologia*/
+
+/*Sections Esportes*/
+
+#esportes {
+    margin-top: 0;
+    background-color:rgba(0,255,0,10%);
+}
+
+#esportes .container a {
+    background-color: green;
+    color: #fff
+}
+
+/*Fim Esportes*/
+
+/*Sections Economia*/
+
+#economia {
+    margin-top: 0;
+    background-color: rgba(206, 206, 129, 0.39);
+}
+
+#economia .container a {
+    background-color: orange;
+    color: #fff
+}
+
+/*Fim Economia*/
+
+
+/*Rodapé*/
+
+footer {
+    padding-bottom: 30px;
+    background-color: #2f3640;
+    }
+
+    footer > p 
+    {   color: #fff;
+        font-size: 20px;
+    }
+
+/*Fim*/
